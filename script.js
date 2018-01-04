@@ -20,8 +20,39 @@ var mySwiper = document.querySelector('.swiper-container').swiper
       });
 
 
-  $(document).ready(function(){
-  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-    $(this).toggleClass('open');
-  });
+  
+
+  var mySwiper = document.querySelector('.triangle');
+
+  var skillsBox = document.querySelector('.skillsBox');
+
+
+
+
+$('.btn1').click(function(){
+
+    $(".btn3").removeClass("triangle");
+     $(".btn2").removeClass("triangle");
+
+     $('.btn1').addClass("triangle");
+     skillsBox.innerHTML ='<img src=\'./images/front.jpg\'  alt="front technologies">';
 });
+
+$('.btn2').click(function(){
+     $(".btn1").removeClass("triangle");
+      $(".btn3").removeClass("triangle");
+
+     $('.btn2').addClass("triangle");
+      skillsBox.innerHTML ='<img src=\'./images/other.jpg\'  alt="Other technologies">'; 
+});
+
+$('.btn3').click(function(){
+     $(".btn2").removeClass("triangle");
+       $(".btn1").removeClass("triangle");
+
+     $('.btn3').addClass("triangle");
+          skillsBox.innerHTML ='<img src=\'./images/WTL.jpg\'  alt="Wish to learm">'; 
+});
+
+
+
