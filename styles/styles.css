@@ -80,14 +80,13 @@ nav {
   margin: 30px 100px; }
 
 .aboutText {
-  font-size: 18px;
-  padding: 10px; }
+  font-size: 18px; }
 
 .aboutContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 40px; }
+  padding-bottom: 0 30px 30px 30px; }
 
 .map {
   grid-area: map;
