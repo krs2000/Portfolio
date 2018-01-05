@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Unbuntu");
 body {
-  font-family: "Ubuntu" "Helvetica", "Arial", sans-serif; }
-
-html {
-  min-height: 100%; }
+  font-family: "Muli", sans-serif;
+  padding: 0;
+  margin: 0; }
 
 .firstSection {
   grid-area: firstSection;
@@ -17,7 +15,7 @@ html {
   height: 750px; }
 
 .secondSection {
-  height: 200px;
+  height: 250px;
   background: #1d1d1d;
   grid-area: secondSection;
   text-align: center;
@@ -30,7 +28,7 @@ html {
 .fourthSection {
   grid-area: fourthSection;
   height: 850px;
-  background: #274060; }
+  background: #1d1d1d; }
 
 .fifthSection {
   grid-area: fifthSection;
@@ -52,6 +50,9 @@ html {
   width: 100%; }
 
 .wrapper {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
   display: grid;
   align-content: start;
   grid-template-areas: "firstSection" "secondSection" "thirdSection" "fourthSection" "fifthSection" "sixthSection" "footer"; }
@@ -71,10 +72,10 @@ nav {
       nav ul li a {
         color: white;
         font-size: 20px;
-        padding: 20px 20px 10px 20px; }
+        padding: 20px 20px 10px 20px;
+        text-decoration: none; }
         nav ul li a:hover {
           color: white;
-          text-decoration: none;
           transition: all 0.4s ease-out;
           box-shadow: 0 -2px 0 0 white inset; }
 
@@ -98,7 +99,7 @@ h3 {
   color: white;
   font-size: 40px;
   text-align: center;
-  padding: 30px 0 40px 0; }
+  padding: 20px 0 20px 0; }
 
 #blackH3 {
   color: #1d1d1d; }
@@ -111,7 +112,7 @@ h3 {
   cursor: pointer; }
 
 .swiper-container {
-  width: 900px; }
+  width: 1200px; }
 
 .social {
   height: 50px;
@@ -186,14 +187,46 @@ button {
   .triangle::before {
     content: "";
     margin: 0 0 0 0px;
-    width: 60px;
-    height: 30px;
+    width: 0px;
+    height: 0px;
     border-bottom: solid 30px white;
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
     position: absolute;
     top: 60px;
     left: 70px; }
+
+.btnUp {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #3a7bd5;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px 20px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  opacity: 0.9; }
+
+.btnUp:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+  opacity: 0.9; }
 
 @media only screen and (max-width: 900px) {
   .wrapper {

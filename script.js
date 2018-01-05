@@ -22,7 +22,6 @@ var mySwiper = document.querySelector('.swiper-container').swiper
 
   
 
-  var mySwiper = document.querySelector('.triangle');
 
   var skillsBox = document.querySelector('.skillsBox');
 
@@ -55,4 +54,26 @@ $('.btn3').click(function(){
 });
 
 
+$(".scroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".firstSection").offset().top},
+        'slow');
+});
 
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector('.btnUp').style.display = "block";
+    } else {
+      document.querySelector('.btnUp').style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
