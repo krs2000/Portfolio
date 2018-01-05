@@ -32,7 +32,7 @@ body {
 
 .fifthSection {
   grid-area: fifthSection;
-  height: 600px; }
+  height: auto; }
 
 .sixthSection {
   grid-area: sixthSection;
@@ -41,13 +41,8 @@ body {
 
 .main-footer {
   grid-area: footer;
-  height: 160px;
+  height: 80px;
   background: white; }
-
-.map {
-  grid-area: map;
-  height: 400px;
-  width: 100%; }
 
 .wrapper {
   margin: 0;
@@ -84,22 +79,39 @@ nav {
   background-repeat: no-repeat;
   margin: 30px 100px; }
 
+.aboutText {
+  font-size: 20px;
+  padding: 10px; }
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px; }
+
+.map {
+  grid-area: map;
+  height: 350px;
+  width: 500px; }
+
 h1 {
   color: white;
   text-align: center;
   padding: 120px 0 50px;
-  font-size: 60px; }
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #1e3366; }
 
 h2 {
   color: white;
   text-align: center;
-  padding: 30px 0; }
+  padding: 30px 0;
+  text-shadow: 2px 2px 4px #1e3366; }
 
 h3 {
   color: white;
   font-size: 40px;
   text-align: center;
-  padding: 20px 0 20px 0; }
+  padding: 15px 0; }
 
 #blackH3 {
   color: #1d1d1d; }
@@ -122,13 +134,18 @@ h3 {
   width: auto; }
 
 .iconContainer {
-  margin: 50px 20px;
+  margin: 20px 20px;
   text-align: center;
   align-items: center; }
+  .iconContainer a {
+    margin: 0 10px; }
 
 section {
   align-items: center;
   text-align: center; }
+
+footer p {
+  margin-bottom: 10px; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
@@ -193,7 +210,7 @@ button {
     border-left: solid 30px transparent;
     border-right: solid 30px transparent;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 70px; }
 
 .btnUp {
@@ -263,6 +280,15 @@ button {
 
   .logoContener {
     margin: 0 auto;
-    text-align: center; } }
+    text-align: center; }
+
+  .aboutContainer {
+    flex-direction: column; }
+
+  .fifthSection {
+    height: 900px; }
+
+  .map {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

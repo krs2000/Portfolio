@@ -20,6 +20,8 @@ html {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
     height: 950px;
+
+
 }
 
 .secondSection {
@@ -43,7 +45,8 @@ html {
 
 .fifthSection {
     grid-area: fifthSection;
-    height: 600px;
+    height: auto;
+
 }
 
 .sixthSection {
@@ -54,15 +57,11 @@ html {
 
 .main-footer {
     grid-area: footer;
-    height: 160px;
+    height: 80px;
     background: white;
 }
 
-.map {
-    grid-area: map;
-    height: 400px;
-    width: 100%;
-}
+
 
 .wrapper {
 	margin:0;
@@ -109,24 +108,52 @@ nav {
     margin: 30px 100px;
 }
 
+.aboutText{
+	font-size: 20px;
+	padding:10px;
+	
+	
+	
+}
+
+.aboutContainer {
+	display: flex; 
+	 flex-direction: row ;
+	  justify-content: center;
+	  padding-bottom: 40px;
+	 
+}
+
+.map {
+    grid-area: map;
+    height: 350px;
+  	width:500px;
+
+   
+}
+
+
+
 h1 {
     color: white;
     text-align: center;
     padding: 120px 0 50px;
     font-size: 60px;
+    text-shadow: 2px 2px 4px #1e3366 ;
 }
 
 h2 {
     color: white;
     text-align: center;
     padding: 30px 0;
+    text-shadow: 2px 2px 4px #1e3366;
 }
 
 h3 {
     color: white;
     font-size: 40px;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 15px 0 ;
 }
 
 #blackH3 {
@@ -172,9 +199,12 @@ h3 {
 
 
 .iconContainer {
-    margin: 50px 20px;
+    margin: 20px 20px;
     text-align: center;
     align-items: center;
+    a {
+    	margin:0 10px;
+    }
 }
 
 
@@ -183,6 +213,11 @@ section {
     align-items: center;
     text-align: center;
 }
+
+footer p {
+	margin-bottom: 10px;
+}
+
 
 
 /* Style inputs with type="text", select elements and textareas */
@@ -274,7 +309,7 @@ position: relative;
         border-left: solid 30px transparent;
         border-right: solid 30px transparent;
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 70px;
     }
 }
@@ -357,6 +392,28 @@ position: relative;
         margin: 0 auto;
         text-align: center;
     }
+
+
+
+.aboutContainer {
+
+	 flex-direction: column ;
+	
+}
+
+.fifthSection {
+
+    height:900px;
+}
+
+.map {
+    
+  	width:100%;
+
+   
+}
+
+
 
 
 }
