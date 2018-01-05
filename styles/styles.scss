@@ -19,7 +19,7 @@ html {
     background: linear-gradient(to right, #3a6073, #3a7bd5);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
-    height: 750px;
+    height: 950px;
 }
 
 .secondSection {
@@ -43,7 +43,7 @@ html {
 
 .fifthSection {
     grid-area: fifthSection;
-    height: 550px;
+    height: 600px;
 }
 
 .sixthSection {
@@ -60,7 +60,7 @@ html {
 
 .map {
     grid-area: map;
-    height: 390px;
+    height: 400px;
     width: 100%;
 }
 
