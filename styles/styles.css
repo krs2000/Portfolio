@@ -126,6 +126,13 @@ h3 {
 .swiper-container {
   width: 1200px; }
 
+.iconContainer {
+  margin: 20px 20px;
+  text-align: center;
+  align-items: center; }
+  .iconContainer a {
+    margin: 0 10px; }
+
 .social {
   height: 50px;
   width: auto; }
@@ -133,12 +140,15 @@ h3 {
 .responsiveImg {
   width: auto; }
 
-.iconContainer {
-  margin: 20px 20px;
-  text-align: center;
-  align-items: center; }
-  .iconContainer a {
-    margin: 0 10px; }
+.emailForm {
+  display: flex;
+  justify-content: center; }
+
+.formData {
+  width: 70%; }
+
+.textData {
+  height: 300px; }
 
 section {
   align-items: center;
@@ -147,45 +157,35 @@ section {
 footer p {
   margin-bottom: 10px; }
 
-/* Style inputs with type="text", select elements and textareas */
+input::placeholder {
+  color: #274060;
+  font-size: 20px;
+  text-align: center; }
+
 input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
   border: 1px solid #ccc;
-  /* Gray border */
   border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */ }
+  resize: vertical; }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #3a7bd5;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 15px; }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049; }
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px; }
+  background-color: #69f; }
 
 button {
   margin: 0 0 20px 0;
@@ -196,8 +196,6 @@ button {
   padding: 0 50px;
   cursor: pointer;
   position: relative; }
-  button:focus {
-    outline: 0; }
 
 .triangle {
   position: relative; }
@@ -215,34 +213,21 @@ button {
 
 .btnUp {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: #3a7bd5;
-  /* Set a background color */
   color: white;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px 20px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   opacity: 0.9; }
 
 .btnUp:hover {
   background-color: #555;
-  /* Add a dark-grey background on hover */
   opacity: 0.9; }
 
 @media only screen and (max-width: 900px) {

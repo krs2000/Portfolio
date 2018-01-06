@@ -72,14 +72,16 @@
         </section>
         <section id="contact" class="sixthSection">
             <h3>Contact</h3>
- 
-		<form action="https://formspree.io/krskrysiak@gmail.com"
+ 		<div class="emailForm">
+		<form class="formData" action="https://formspree.io/krskrysiak@gmail.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
+    <input type="text"  name="name" placeholder="Name">
+    <input type="text"  name="name" placeholder="Topic">
+    <input type="text" class="textData" name="message" placeholder="Your message">
+    <input type="email"  class="emailData" name="_replyto" placeholder="Email">
     <input type="submit" value="Send">
-</form>
-
+		</form>
+	</div>
 
         </section>
         <button onclick="topFunction()" class="btnUp" title="Go to top"><i class="fa fa-long-arrow-up fax3" aria-hidden="true"></i></button>
