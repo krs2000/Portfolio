@@ -3,13 +3,13 @@
 $myemail  = "krskry@gmail.com";
 
 /* Check all form inputs using check_input function */
-$yourname = check_input($_POST['yourname'], "Enter your name");
-$subject  = check_input($_POST['subject'], "Write a subject");
-$email    = check_input($_POST['email']);
-$website  = check_input($_POST['website']);
-$likeit   = check_input($_POST['likeit']);
-$how_find = check_input($_POST['how']);
-$comments = check_input($_POST['comments'], "Write your comments");
+$yourname = check_input($_GET['yourname'], "Enter your name");
+$subject  = check_input($_GET['subject'], "Write a subject");
+$email    = check_input($_GET['email']);
+$website  = check_input($_GET['website']);
+$likeit   = check_input($_GET['likeit']);
+$how_find = check_input($_GET['how']);
+$comments = check_input($_GET['comments'], "Write your comments");
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
