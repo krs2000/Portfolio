@@ -107,8 +107,10 @@ nav {
 
 .aboutText{
 	font-size: 18px;
-	
-	
+	box-shadow:1px 1px 1px 1px #1e3366;
+	height:300px;
+	width:400px;
+		margin:30px;
 	
 	
 }
@@ -122,10 +124,12 @@ nav {
 }
 
 .map {
-    grid-area: map;
-    height: 350px;
+
+	margin:30px;
+    height: 300px;
   	width:500px;
-  	margin:20px;
+  
+
 
    
 }
@@ -217,6 +221,8 @@ section {
 
 footer p {
 	margin-bottom: 10px;
+	color:#274060;
+	font-size: 15px;
 }
 
 input::placeholder {
@@ -274,6 +280,9 @@ button {
     padding: 0 50px;
     cursor: pointer;
      position: relative;
+     &:focus{
+   outline: 0;
+     }
 }
 
 .triangle { 
@@ -390,6 +399,10 @@ position: relative;
 
    
 }
+
+.aboutText{
+  	width:100%;
+	}
 
 
 

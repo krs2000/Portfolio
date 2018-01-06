@@ -80,7 +80,11 @@ nav {
   margin: 30px 100px; }
 
 .aboutText {
-  font-size: 18px; }
+  font-size: 18px;
+  box-shadow: 1px 1px 1px 1px #1e3366;
+  height: 300px;
+  width: 400px;
+  margin: 30px; }
 
 .aboutContainer {
   display: flex;
@@ -89,10 +93,9 @@ nav {
   padding-bottom: 0 30px 30px 30px; }
 
 .map {
-  grid-area: map;
-  height: 350px;
-  width: 500px;
-  margin: 20px; }
+  margin: 30px;
+  height: 300px;
+  width: 500px; }
 
 h1 {
   color: white;
@@ -155,7 +158,9 @@ section {
   text-align: center; }
 
 footer p {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #274060;
+  font-size: 15px; }
 
 input::placeholder {
   color: #274060;
@@ -196,6 +201,8 @@ button {
   padding: 0 50px;
   cursor: pointer;
   position: relative; }
+  button:focus {
+    outline: 0; }
 
 .triangle {
   position: relative; }
@@ -274,6 +281,9 @@ button {
     height: 900px; }
 
   .map {
+    width: 100%; }
+
+  .aboutText {
     width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
