@@ -28,13 +28,21 @@ var mySwiper = document.querySelector('.swiper-container').swiper
 
 
 
+
 $('.btn1').click(function(){
 
     $(".btn3").removeClass("triangle");
      $(".btn2").removeClass("triangle");
 
      $('.btn1').addClass("triangle");
-     skillsBox.innerHTML ='<img src=\'./images/front.jpg\'  alt="front technologies">';
+     skillsBox.innerHTML ="<img src =\"./images/html.jpg\" alt=\"html\" >" +
+               "<img src =\"./images/css.jpg\" alt=\"css\">" +
+                  "<img src =\"./images/sass.jpg\" alt=\"sass\">"+
+                     "<img src =\"./images/bsp.jpg\" alt=\"bsp\">"+
+                        "<img src =\"./images/wp.jpg\" alt=\"wp\">"+
+                            "<img src =\"./images/js.jpg\" alt=\"js\">"+
+                        "<img src =\"./images/react.jpg\" alt=\"react\">"+
+                            "<img src =\"./images/redux.jpg\" alt=\"redux\">";
 });
 
 $('.btn2').click(function(){
@@ -42,7 +50,11 @@ $('.btn2').click(function(){
       $(".btn3").removeClass("triangle");
 
      $('.btn2').addClass("triangle");
-      skillsBox.innerHTML ='<img src=\'./images/other.jpg\'  alt="Other technologies">'; 
+      skillsBox.innerHTML ="<img src =\"./images/ps.jpg\" alt=\"ps\" >" +
+               "<img src =\"./images/ai.jpg\" alt=\"ai\">" +
+                     "<img src =\"./images/git.jpg\" alt=\"git\">"+
+                        "<img src =\"./images/java.jpg\" alt=\"java\">"+
+                  "<img src =\"./images/db.jpg\" alt=\"db\">";
 });
 
 $('.btn3').click(function(){
@@ -50,7 +62,9 @@ $('.btn3').click(function(){
        $(".btn1").removeClass("triangle");
 
      $('.btn3').addClass("triangle");
-          skillsBox.innerHTML ='<img src=\'./images/WTL.jpg\'  alt="Wish to learm">'; 
+          skillsBox.innerHTML ="<img src =\"./images/angular.jpg\" alt=\"angular\" >" +
+               "<img src =\"./images/vue.jpg\" alt=\"vue\">" +
+                     "<img src =\"./images/python.jpg\" alt=\"python\">"; 
 });
 
 

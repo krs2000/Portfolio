@@ -32,7 +32,10 @@ body {
 
 .thirdSection {
     grid-area: thirdSection;
-    height: 350px;
+    height: 410px;
+    display: flex;
+    justify-content:center;
+   
 }
 
 .fourthSection {
@@ -107,11 +110,14 @@ nav {
 
 .aboutText{
 	font-size: 18px;
-	box-shadow:1px 1px 1px 1px #1e3366;
 	height:300px;
-	width:400px;
+	width:300px;
 		margin:30px;
 	
+	 span {
+ font-size:25px;
+ font-weight: bold;
+	}
 	
 }
 
@@ -119,19 +125,14 @@ nav {
 	display: flex; 
 	 flex-direction: row ;
 	  justify-content: center;
-	  padding-bottom: 0 30px 30px 30px;
+	  // padding-bottom: 0 30px 30px 30px;
 	 
 }
 
 .map {
 
 	margin:30px;
-    height: 300px;
-  	width:500px;
-  
-
-
-   
+    height: 300px;   
 }
 
 
@@ -192,9 +193,6 @@ h3 {
     width: auto;
 }
 
-.responsiveImg{
-	width: auto;
-}
 
 .emailForm {
 display: flex;
@@ -210,7 +208,9 @@ justify-content:center;
 	height:300px;
 }
 
-
+.skillsBox img {
+	margin:5px;
+}
 
 
 
@@ -326,6 +326,10 @@ position: relative;
 
 
 
+
+
+
+
 @media only screen and (max-width: 900px) {
     .wrapper {
         position: relative;
@@ -395,16 +399,22 @@ position: relative;
 
 .map {
     
-  	width:100%;
+  	width: auto;
+display: block;
 
    
 }
 
 .aboutText{
-  	width:100%;
+  	width: auto;
+display: block;
 	}
 
 
 
 
 }
+
+// * {
+// 	border: 1px red solid;
+// }
